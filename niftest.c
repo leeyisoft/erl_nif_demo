@@ -55,6 +55,18 @@ static ErlNifFunc nif_funcs[] =
     {"sum", 2, sum}
 };
 
-ERL_NIF_INIT(niftest, nif_funcs, NULL, NULL, NULL, NULL)
+static int load(ErlNifEnv* env, void** priv, ERL_NIF_TERM load_info)
+{
+    return 0;
+}
+
+static int upgrade(ErlNifEnv* caller_env, void** priv_data,
+           void** old_priv_data, ERL_NIF_TERM load_info)
+{
+    return 0;
+}
+
+ERL_NIF_INIT(niftest, nif_funcs, load, NULL, upgrade, NULL)
+// ERL_NIF_INIT(niftest, nif_funcs, NULL, NULL, NULL, NULL)
 // ERL_NIF_INIT(niftest, nif_funcs, load, reload, upgrade, unload)
 
