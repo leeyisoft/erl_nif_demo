@@ -22,8 +22,14 @@ run erl
 ```
 $> erl
 
+erl
+Erlang/OTP 24 [erts-12.3.2] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1] [dtrace]
+
+Eshell V12.3.2  (abort with ^G)
 1> c(niftest).
 {ok,niftest}
-2> niftest:hello().
-"Hello world!"
+2> niftest:sum(1,2).
+3
+3> niftest:findPrime(50).
+[47,43,41,37,31,29,23,19,17,13,11,7,5,3]
 ```
