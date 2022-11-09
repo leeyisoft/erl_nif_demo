@@ -33,3 +33,7 @@ Eshell V12.3.2  (abort with ^G)
 3> niftest:findPrime(50).
 [47,43,41,37,31,29,23,19,17,13,11,7,5,3]
 ```
+
+# other demo
+* bitwise: NIF examples showing Erlang scheduler concerns
+ [github](https://github.com/vinoski/bitwise)
