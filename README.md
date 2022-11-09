@@ -34,6 +34,9 @@ Eshell V12.3.2  (abort with ^G)
 [47,43,41,37,31,29,23,19,17,13,11,7,5,3]
 ```
 
-# other demo
+# Other Cases / 其他案例
+* TLS / SSL OpenSSL-based native driver for Erlang / Elixir [github](https://github.com/processone/fast_tls)
+
 * bitwise: NIF examples showing Erlang scheduler concerns
  [github](https://github.com/vinoski/bitwise)
+
